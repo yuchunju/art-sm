@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+nav{
+	width:40.5rem;
+	}
+	
+nav li{
+	display:block;
+	background:url('lib/pic/me03.png');
+    background-size:30%;
+    background-repeat:no-repeat;
+	padding:3.6rem;
+	transition-property:background-img, padding-left;
+	transition-duration:2s;
+	}
+nav li:hover{
+	background:url('lib/pic/me04.png');
+    background-size:30%;
+    background-repeat:no-repeat;
+	padding:5rem;
+	padding-left:18rem;}	
+
+nav li a{
+	width:100%;
+	height:100%;
+	display:block;
+	text-decoration: none;
+	color:#fff;
+	font-weight:bold;
+	cursor:help;
+	}
+	
+
