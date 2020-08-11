@@ -18,6 +18,18 @@ function setup() {
   }
 }
 
+
+
+function mousePressed() {
+   for (let i = 0; i <20; i++) {
+	  if(bugs[i].contains(mouseX, mouseY)){
+		 bugs.splice(i, 1); 
+	 } 
+  }
+}
+
+
+
 function draw() {
 	background('#99CCFF');
 	
@@ -40,9 +52,18 @@ class Jitter {
     this.y += random(-this.speed, this.speed);
   }
 
+  contains(px, py) {
+	  let d = dist(px, py, this.x, this.y);
+	  if (d < this.diameter) {
+		  return true;
+		  } else {
+		  return false; 
+			  }
+	  }
+
+
   display() {
     drawingContext.drawImage(img,this.x, this.y, this.diameter, this.diameter);
   }
 }
-
 
