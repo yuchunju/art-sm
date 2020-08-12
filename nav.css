@@ -3,24 +3,25 @@
 
 
 nav{
-	width:40.5rem;
+	width:windowWidth;
+
 	}
 	
 nav li{
 	display:block;
 	background:url('lib/pic/me03.png');
-    background-size:30%;
+    background-size:110%;
     background-repeat:no-repeat;
-	padding:3.6rem;
+	padding:3rem;
 	transition-property:background-img, padding-left;
 	transition-duration:2s;
 	}
 nav li:hover{
 	background:url('lib/pic/me04.png');
-    background-size:30%;
+    background-size:60%;
     background-repeat:no-repeat;
 	padding:5rem;
-	padding-left:18rem;}	
+	padding-left:10rem;}	
 
 nav li a{
 	width:100%;
