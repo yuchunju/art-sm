@@ -13,7 +13,7 @@ function setup() {
     img = new Image();
     img.src = "lib/pic/me07.png";
 	
-	for (let i = 0; i < 20; i++) {
+	for (let i = 0; i < 35; i++) {
     bugs.push(new Jitter());
   }
 }
@@ -21,7 +21,7 @@ function setup() {
 
 
 function mousePressed() {
-   for (let i = 0; i <20; i++) {
+   for (let i = 0; i <35; i++) {
 	  if(bugs[i].contains(mouseX, mouseY)){
 		 bugs.splice(i, 1); 
 	 } 
