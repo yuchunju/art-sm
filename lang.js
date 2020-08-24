@@ -33,21 +33,12 @@ var WORDS_IT = {
 
 };
 
-var lang = "en-gb";
-// Check for localStorage support
-if('localStorage' in window){
 
-   var usrLang = localStorage.getItem('uiLang');
-   if(usrLang) { // If key exists, then use that found in localStorage
-       lang = usrLang
-   }
-
-}
 
 window.onload = initialize;
 
 function initialize() {
-
+  var lang = getCookie('lang');
   var $dropdown = $("#country_select");    
   $.each(LanguageList, function(key, value) {
     $dropdown.
@@ -68,4 +59,6 @@ function loadsLanguage(lang){
     $(this).text(Text);        
   });
 }
+
+
 
