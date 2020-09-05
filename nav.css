@@ -1,8 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
 select {
-
-          float:right; 
+	      position:relative;
+          top:.5rem;
+	      float:right;
 		  background:none;
 		  color:#fff;
 	      font-weight:bold;
@@ -30,10 +31,12 @@ select:focus {
 
 
 
-
 nav{
+	position:relative;
+    top:1rem;
 	width:windowWidth;
     float:left;
+	
 	}
 	
 nav li{
@@ -49,7 +52,7 @@ nav li:hover{
 	background:url('lib/pic/me04.png');
     background-size:contain;
     background-repeat:no-repeat;
-	padding:4rem;
+	padding:3rem;
 }	
 
 nav li a{
@@ -68,7 +71,7 @@ nav li a{
 	
 div{
 	position:fixed;
-	top:11rem;
+	top:9rem;
 	left:2rem;
 	display:block;
 	text-decoration: none;
