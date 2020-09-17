@@ -6,34 +6,31 @@ body{
 }
 
 
+button{
+position: relative;
+background:none;
+border: none;
+float: right;
+top: .8rem;
+}
 
-select {
-	      position:relative;
-          top:.5rem;
-	      float:right;
-		  background:none;
-		  color:#fff;
-	      font-weight:bold;
-		  border:none;
+button:hover{
+	border: none;
+	background: none;
+	padding-top: .3rem;
+}
 
-	}
-	
+button:focus{
+	border: none;
+	background-color:#3F98F3;
+	padding-top: .3rem;
+	outline: none;
+	border-radius:50%
+}
 
-
-select option {
-	      background:none;
-		  color:#ff85d2;
-	      font-weight:bold;
-		  border:none;	
-	      cursor:help; 
-	
-	}
-
-
-select:focus {
-	      background:none;
-	      cursor:help;
-          outline: none;
+#it,#zh,#en{
+	position: relative;
+   right: .5rem;
 }
 
 
@@ -68,7 +65,6 @@ nav li a{
 	display:block;
 	text-decoration: none;
 	color:#fff;
-	font-weight:bold;
 	cursor:help;
 	}
 
@@ -90,5 +86,4 @@ div{
 	text-decoration: none;
 	font-size:1.2rem;
 	color:#fff;
-	font-weight:bold;
 	}
