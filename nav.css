@@ -5,35 +5,34 @@ body{
 	-webkit-text-size-adjust:none; 
 }
 
-
 button{
 position: relative;
 background:none;
 border: none;
 float: right;
 top: 10px;
+right: 10px;
 z-index: 999;
+width: 30px;
+
 }
 
 button:hover{
 	border: none;
 	background: none;
 	padding-top: 5px;
-	border-radius:50%}
+	
+}
 
-button:focus{
+button:focus,button:active{
 	border: none;
 	background-color:#3F98F3;
 	padding-top: 5px;
 	outline: none;
-	border-radius:50%
+	border-radius:50%;
+
 }
 
-
-#it,#zh,#en{
-	position: relative;
-   right: 5px;
-}
 
 
 
@@ -86,7 +85,7 @@ div{
 	right: 20px;
 	display:block;
 	text-decoration: none;
-	font-size:40px;
+	font-size:25px;
 	color:#fff;
 	line-height: 50px;
 	}
