@@ -21,7 +21,7 @@ function setup() {
 
 
 function mousePressed() {
-   for (let i = 0; i <35; i++) {
+   for (let i = 0; i <95; i++) {
 	  if(bugs[i].contains(mouseX, mouseY)){
 		 bugs.splice(i, 1);
 	 }
