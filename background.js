@@ -7,13 +7,13 @@ function windowResized() {
 
 
 function setup() {
-  canvas = createCanvas(windowWidth, windowHeight);
+  canvas = createCanvas(windowWidth, 2600);
   canvas.position(0,0);
   canvas.style('z-index','-1');
     img = new Image();
     img.src = "lib/pic/me07.png";
-	
-	for (let i = 0; i < 35; i++) {
+
+	for (let i = 0; i < 95; i++) {
     bugs.push(new Jitter());
   }
 }
@@ -23,8 +23,8 @@ function setup() {
 function mousePressed() {
    for (let i = 0; i <35; i++) {
 	  if(bugs[i].contains(mouseX, mouseY)){
-		 bugs.splice(i, 1); 
-	 } 
+		 bugs.splice(i, 1);
+	 }
   }
 }
 
@@ -32,7 +32,7 @@ function mousePressed() {
 
 function draw() {
 	background('#99CCFF');
-	
+
 	for (let i = 0; i < bugs.length; i++) {
     bugs[i].move();
     bugs[i].display();
@@ -57,7 +57,7 @@ class Jitter {
 	  if (d < this.diameter) {
 		  return true;
 		  } else {
-		  return false; 
+		  return false;
 			  }
 	  }
 
@@ -66,4 +66,3 @@ class Jitter {
     drawingContext.drawImage(img,this.x, this.y, this.diameter, this.diameter);
   }
 }
-

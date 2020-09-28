@@ -2,7 +2,7 @@
 /* CSS Document */
 body{
  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-	-webkit-text-size-adjust:none; 
+ background-color:#99CCFF;
 }
 
 button{
@@ -21,7 +21,7 @@ button:hover{
 	border: none;
 	background: none;
 	padding-top: 5px;
-	
+
 }
 
 button:focus,button:active{
@@ -41,9 +41,9 @@ nav{
     top:10px;
 	width:windowWidth;
     float:left;
-	
+
 	}
-	
+
 nav li{
 	display:block;
 	background:url('lib/pic/me03.png');
@@ -58,7 +58,7 @@ nav li:hover{
     background-size:contain;
     background-repeat:no-repeat;
 	padding:30px;
-}	
+}
 
 nav li a{
 	width:100%;
@@ -72,20 +72,45 @@ nav li a{
 nav li a:hover{
 	color:#fff;
    text-decoration:underline;
-	}	
+	}
 
-	
 
-	
-	
+
+
+
 div{
-	position:fixed;
+	position:absolute;
+	top:90px;
+	left:60px;
+	right: 60px;
+	display:block;
+	text-decoration: none;
+	font-size:25px;
+	color:#fff;
+	line-height: 35px;
+	}
+#click{
+	font-size: 70px;
+	line-height:50px;
+}
+
+	@media (max-width: 930px) {
+		body{
+}
+div{
+	position:absolute;
 	top:90px;
 	left:20px;
 	right: 20px;
 	display:block;
 	text-decoration: none;
-	font-size:25px;
+	font-size:20px;
 	color:#fff;
-	line-height: 50px;
+	line-height: 30px;
+	}
+
+#click{
+	font-size: 35px;
+	line-height:45px;
+}
 	}
