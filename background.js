@@ -7,7 +7,7 @@ function windowResized() {
 
 
 function setup() {
-  canvas = createCanvas(windowWidth, 2600);
+  canvas = createCanvas(windowWidth, 1100);
   canvas.position(0,0);
   canvas.style('z-index','-1');
     img = new Image();
