@@ -114,3 +114,20 @@ div{
 	line-height:45px;
 }
 	}
+
+
+	/* Enlarge only text4 and text5 */
+p[key="text4"],
+p[key="text5"] {
+    font-size: 32px; /* Adjust as needed */
+    line-height: 1.8em;
+}
+
+/* Optional: mobile version */
+@media (max-width: 930px) {
+  p[key="text4"],
+  p[key="text5"] {
+    font-size: 26px;
+    line-height: 1.6em;
+  }
+}
